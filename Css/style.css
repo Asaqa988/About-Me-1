@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Modak");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #131313;
+
+    
+
+}
+
+p{
+    background: #59C173;
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #4b4dc9);
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); 
+    border-right: .15em solid orange;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+    font-size: 30px;
+}
