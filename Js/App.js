@@ -1,12 +1,14 @@
 "use strict";
 
-// this function displays everything with no return Value
-function ShowMessage(){
+
     let name = prompt("Welcome TO Quiz Game Enter Your First Name Please") ; 
     name = name.toUpperCase()
+    //console.log("welcome", name)
     alert("welcome" + "  " + name)
 // Q1
+    
     let answer1 = prompt("Do you Think I'm Noob in software Devlopment Field  Answer with YES Or NO Y/N")
+     //console.log("No will be Correct / yes will be Wrong")
     answer1 = answer1.toLowerCase()
 
     switch (answer1) {
@@ -33,6 +35,8 @@ function ShowMessage(){
     // Q2
 
     let answer2 = prompt("Do You Think JAVASCRIPT is a cool lang")
+    //console.log("No will be Correct / yes will be Wrong")
+    
     answer2 = answer2.toLowerCase()
 
 
@@ -61,6 +65,7 @@ function ShowMessage(){
     // Q3
 
         let answer3 = prompt("Do you think QA is A hard Carrer")
+        //console.log("No will be Correct / yes will be Wrong")
         answer3 = answer3.toLowerCase()
     
     
@@ -90,6 +95,7 @@ function ShowMessage(){
     // Q4
 
     let answer4 = prompt("Do you believe that we evolved from animals?")
+    //console.log("No will be Correct / yes will be Wrong")
     answer4 = answer4.toLowerCase()
 
 
@@ -119,6 +125,7 @@ function ShowMessage(){
     // Q5
 
         let answer5 = prompt("Do you Think JAVASCRIPT is my first programming lang")
+        //console.log("No will be Correct / yes will be Wrong")
         answer5 = answer5.toLowerCase()
     
     
@@ -156,5 +163,4 @@ function ShowMessage(){
      */
 
    
-} 
-ShowMessage()
+
