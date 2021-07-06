@@ -1,6 +1,6 @@
 "use strict";
 
-
+    let score = 0 
     let name = prompt("Welcome TO Quiz Game Enter Your First Name Please") ; 
     name = name.toUpperCase()
     //console.log("welcome", name)
@@ -14,16 +14,20 @@
     switch (answer1) {
         case 'yes':
             alert("wrong answer ") //i have been coding for 1 year with python Django Framework =)
+            
             break;
         case 'no':
+            score++;
             alert(" Correct answer")
             break;
         case 'y':
+            
             alert("wrong answer")
             break;
         
         case 'n':
             alert(" Correct answer")
+            score++;
             break;
     
         default:
@@ -43,12 +47,14 @@
     
     switch (answer2) {
         case 'yes':
+            score++;
             alert("Correct answer ") 
             break;
         case 'no':
             alert(" Wrong answer")
             break;
         case 'y':
+            score++;
             alert("Correct answer")
             break;
         
@@ -75,6 +81,7 @@
                 alert("wrong answer ") 
                 break;
             case 'no':
+                score++;
                 alert(" Correct answer")
                 break;
             case 'y':
@@ -82,6 +89,7 @@
                 break;
             
             case 'n':
+                score++;
                 alert(" Correct answer")
                 break;
         
@@ -102,12 +110,14 @@
     
     switch (answer4) {
         case 'yes':
+            score++;
             alert("Correct answer ") 
             break;
         case 'no':
             alert(" Wrong answer")
             break;
         case 'y':
+            score++;
             alert("Correct answer")
             break;
         
@@ -135,6 +145,7 @@
                 alert("wrong answer ") 
                 break;
             case 'no':
+                score++;
                 alert(" Correct answer")
                 break;
             case 'y':
@@ -142,6 +153,7 @@
                 break;
             
             case 'n':
+                score++;
                 alert(" Correct answer")
                 break;
         
@@ -163,4 +175,94 @@
      */
 
    
-
+//Q6
+let counter = 4;
+    for (let i = 0; i < 4; i++) {
+        let guess = prompt("Guess a number betwen 1 to 10" + "You Have" +"  " + counter +"  "+ "Attempts");
+        guess = parseInt(guess)
+        if (guess === 4) {
+            score++;
+            alert("correct Answer")
+            break; 
+            
+        }
+        else if (guess > 5){
+            alert("too High")
+            counter--;
+            
+        }
+        else if (guess<=5) {
+            counter--;
+            alert("Too Low")
+        } 
+        if(counter == 0){
+    
+                alert("Correct Answer is 4 ")
+              
+        }
+    }
+    
+       
+    
+    
+//Q7 
+ let fav = prompt("What's My fav Programming Language ")
+ fav = fav.toLowerCase()
+ fav = fav.toString()
+ let lang =[
+     'Ruby',
+     'Java',
+     'Python',
+     'HTML',
+     'JavaScript',
+     'C++',
+       
+    ]
+    let attempts = 6
+    for (let i = 1; i <=attempts; i++) {
+        if (fav === 'ruby' || fav == 'javascript') {
+            score++;
+            alert("correct Answer")
+            break;
+        }
+        else{
+            for (let j = 0; j < lang.length; j++) {
+                while (attempts!=1) {
+                    if (fav === 'ruby' || fav == 'javascript') {
+                        attempts = 1; 
+                        score++;
+                        alert("correct Answer")
+                        break;
+                        
+                    }
+                 
+                    if(fav !== lang[j]){
+                       attempts--;
+                       alert(`Wrong answer you have ${attempts}`);
+                       alert('Possible Answers : ruby, javascript')
+                       fav = prompt("What's My fav Programming Language ")
+                       
+                       
+                       
+                   }
+                   
+                 
+                }
+            
+      
+                
+           }    
+            
+           
+       }
+       
+        }
+        alert(`your Final score: ${score} /10`) 
+        alert("Thank you for playing")  
+     
+    
+        
+           
+       
+        
+    
