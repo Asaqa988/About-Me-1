@@ -78,7 +78,7 @@ question2 ()
     
    
 
-    // Q3
+    // Q3 
 function question3(){
 
     let answer3 = prompt("Do you think QA is A hard Carrer")
