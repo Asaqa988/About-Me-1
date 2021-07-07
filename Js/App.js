@@ -151,7 +151,7 @@ question4 ()
    
 
     
-    // Q5
+    // Q5 
 
 function question5 () {
     let answer5 = prompt("Do you Think JAVASCRIPT is my first programming lang")
