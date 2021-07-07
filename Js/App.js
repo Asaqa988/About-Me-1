@@ -115,7 +115,7 @@ question3 ()
 
 
 
-    // Q4
+    // Q4 
 function question4 (){
     let answer4 = prompt("Do you believe that we evolved from animals?")
     //console.log("No will be Correct / yes will be Wrong")
